@@ -160,6 +160,8 @@ exactly where the strategy looks best* (the 1999–2012 in-sample window) and ne
 absent in the out-of-sample window. Any in-sample outperformance must be discounted
 accordingly, and §10 shows this is not a hypothetical concern.
 
+![Figure 9](results/figures/09_survivorship.png)
+
 *Figure 9 — `09_survivorship.png`. The shaded band is the unrecoverable survivorship
 hole: index members that existed on the date but cannot be priced.*
 
@@ -276,11 +278,11 @@ $$\text{RESMOM}_{i,t} = \frac{\sum_{u = t-L}^{t-s} \varepsilon_{i,u}}{\sigma(\va
 
 **3 — Low volatility**
 
-$$\text{LOWVOL}_{i,t} = -\sqrt{252}\thickspace\thickspace \sigma\big(r_{i,u}\big)_{u \in (t-L,\thinspace t]}$$
+$$\text{LOWVOL}_{i,t} = -\sqrt{252}\quad\sigma\big(r_{i,u}\big)_{u \in (t-L, t]}$$
 
 **4 — Low beta**
 
-$$\text{LOWBETA}_{i,t} = -\frac{\text{Cov}(r_i, r_m)}{\text{Var}(r_m)} \bigg|_{(t-L,\thinspace t]}$$
+$$\text{LOWBETA}_{i,t} = -\frac{\text{Cov}(r_i, r_m)}{\text{Var}(r_m)} \bigg|_{(t-L, t]}$$
 
 **5 — Short-term reversal**
 
@@ -292,7 +294,7 @@ weighted sum.
 **Cross-sectional standardisation.** At each date, within the eligible universe:
 winsorise at the 1st/99th percentiles, then
 
-$$z^{(k)}_{i,t} = \frac{f^{(k)}_{i,t} - \mu_t\big(f^{(k)}\big)}{\sigma_t\big(f^{(k)}\big)}, \qquad S_{i,t} = \sum_k w_k\thinspace z^{(k)}_{i,t}$$
+$$z^{(k)}_{i,t} = \frac{f^{(k)}_{i,t} - \mu_t\big(f^{(k)}\big)}{\sigma_t\big(f^{(k)}\big)}, \qquad S_{i,t} = \sum_k w_k z^{(k)}_{i,t}$$
 
 re-standardised to unit cross-sectional variance. Winsorising *before* z-scoring matters:
 a single extreme value inflates $\sigma_t$ and compresses every other stock's score.
@@ -346,7 +348,7 @@ a stationary block bootstrap (Politis-Romano) for Sharpe confidence intervals; a
 Probabilistic / Deflated Sharpe Ratio (Bailey & López de Prado 2014) to correct for
 multiple testing:
 
-$$\widehat{SR^*} = \sqrt{\text{Var}(SR_{\text{trials}})}\left[(1-\gamma)\thinspace\Phi^{-1}\negthinspace\left(1 - \tfrac{1}{N}\right) + \gamma\thinspace\Phi^{-1}\negthinspace\left(1 - \tfrac{1}{Ne}\right)\right]$$
+$$\widehat{SR^*} = \sqrt{\text{Var}(SR_{\text{trials}})}\left[(1-\gamma)\Phi^{-1}\left(1 - \tfrac{1}{N}\right) + \gamma\Phi^{-1}\left(1 - \tfrac{1}{Ne}\right)\right]$$
 
 where $N$ is the number of configurations examined and $\gamma$ is the Euler-Mascheroni
 constant. Reporting a Sharpe ratio selected as the best of many trials without this
@@ -372,6 +374,8 @@ correction is one of the most common failures in published backtests.
 | **Information ratio** | **+0.204** | **−0.459** | **−0.089** | **+0.354** | **−0.268** | — | — | — |
 | Up capture | 0.720 | 0.713 | 0.719 | 1.134 | 1.054 | — | — | — |
 | Down capture | 0.686 | 0.720 | 0.701 | 1.093 | 1.105 | — | — | — |
+
+![Figure 1](results/figures/01_cumulative_returns.png)
 
 *Figure 1 — `results/figures/01_cumulative_returns.png`. Over the full 27 years SPY
 compounds to 9.7×, the IC-weighted strategy to 9.5×, the equal-weighted composite to 8.3×.*
@@ -406,6 +410,8 @@ what the strategy actually is: a **0.83-beta portfolio with momentum, profitabil
 conservative-investment tilts** — all purchasable through liquid factor ETFs at ~15 bps
 a year, versus this strategy's ~112 bps of annual trading cost.
 
+![Figure 13](results/figures/13_rolling_beta.png)
+
 *Figure 13 — `13_rolling_beta.png`. These exposures are not stable: market beta drifts
 between roughly 0.6 and 1.0 across regimes, so even the factor description of the
 strategy is a moving target.*
@@ -420,6 +426,8 @@ strategy is a moving target.*
 | low beta | 7.64% | 6.82% | 5.77% | −1.88% | −0.27 | 0.0048 | 0.017 | 0.22 |
 | **reversal** | 4.83% | 6.87% | 9.54% | **+4.71%** | **1.38** | **0.0239** | **0.146** | **1.89** |
 | composite | | | | | | 0.0114 | 0.052 | 0.67 |
+
+![Figure 8](results/figures/08_factor_ic.png)
 
 *Figure 8 — `08_factor_ic.png`.*
 
@@ -474,7 +482,7 @@ The cause is algebraic, not numerical. OLS with an intercept forces
 $\sum_u \varepsilon_{i,u} = 0$ over the estimation window. Splitting that window into the
 accumulation period and the skipped month gives
 
-$$\sum_{u=t-L}^{t-s} \varepsilon_{i,u} \thickspace=\thickspace -\sum_{u=t-s}^{t} \varepsilon_{i,u}$$
+$$\sum_{u=t-L}^{t-s} \varepsilon_{i,u} = -\sum_{u=t-s}^{t} \varepsilon_{i,u}$$
 
 so the "12-month residual momentum" signal was exactly **minus the skipped month's
 residual return** — a reversal signal with a momentum label. Since reversal is the one
@@ -510,6 +518,8 @@ rebalance schedule and turnover costs:
 | **Strategy EW (top 50 by score)** | **7.02%** | 0.572 | **31st** | 95th |
 | **Strategy IC-weighted (top 50)** | 8.08% | **0.479** | 81st | **29th** |
 | **Equal-weight the ENTIRE universe** | **9.24%** | **0.611** | **99.6th** | **100th** |
+
+![Figure 10](results/figures/10_null_distribution.png)
 
 *Figure 10 — `10_null_distribution.png`.*
 
@@ -577,6 +587,8 @@ offering reliable protection.
 | Net CAGR | 9.16% | 8.88% | 8.46% | 7.76% | 7.06% | 6.37% | 5.00% | 2.30% |
 | Excess vs SPY | +0.53% | +0.25% | −0.18% | −0.88% | −1.57% | −2.26% | −3.63% | −6.33% |
 
+![Figure 11](results/figures/11_cost_breakeven.png)
+
 **Break-even one-way cost: 3.74 bps.** *Figure 11 — `11_cost_breakeven.png`.*
 
 At 12.9× annual turnover, every basis point of cost removes ~13 bps of annual return.
@@ -616,6 +628,8 @@ years, roll forward. No parameter ever sees its own evaluation period.
 | **Excess CAGR vs SPY** | **−6.48%** |
 | **Information ratio** | **−0.42** |
 | Up / down capture | 0.958 / 1.009 |
+
+![Figure 12](results/figures/12_walk_forward.png)
 
 *Figure 12 — `12_walk_forward.png`.*
 
@@ -889,3 +903,43 @@ python -m pytest tests/ -v              # 49 tests
 - Novy-Marx (2013), *The Other Side of Value: The Gross Profitability Premium*, JFE
 - Politis & Romano (1994), *The Stationary Bootstrap*, JASA
 - Sloan (1996), *Do Stock Prices Fully Reflect Information in Accruals...*, Accounting Review
+
+---
+
+## Appendix C — Additional figures
+
+Diagnostics produced by the pipeline that are not cited inline above. Each is
+generated by `scripts/05_figures.py` from the same cached backtest results as the
+figures in the body.
+
+![Figure 2](results/figures/02_drawdowns.png)
+
+*Figure 2 — `02_drawdowns.png`. Drawdown paths for both specifications against SPY.*
+
+![Figure 3](results/figures/03_rolling_sharpe.png)
+
+*Figure 3 — `03_rolling_sharpe.png`. Rolling one-year Sharpe ratio, showing how
+unstable the risk-adjusted return is across the sample.*
+
+![Figure 4](results/figures/04_factor_exposures.png)
+
+*Figure 4 — `04_factor_exposures.png`. Rolling factor loadings from the attribution
+regressions of §10.2.*
+
+![Figure 5](results/figures/05_turnover.png)
+
+*Figure 5 — `05_turnover.png`. Realised turnover per rebalance, which drives the cost
+break-even in §12.4.*
+
+![Figure 6](results/figures/06_annual_returns.png)
+
+*Figure 6 — `06_annual_returns.png`. Calendar-year returns against the benchmark.*
+
+![Figure 7](results/figures/07_monthly_heatmap.png)
+
+*Figure 7 — `07_monthly_heatmap.png`. Monthly returns by year.*
+
+![Figure 14](results/figures/14_is_oos.png)
+
+*Figure 14 — `14_is_oos.png`. In-sample against out-of-sample performance — the sign
+flip that §10.1 treats as the headline.*

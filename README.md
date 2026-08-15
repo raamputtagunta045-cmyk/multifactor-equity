@@ -9,6 +9,9 @@ strategy fail if it deserves to.
 stocks better than chance within its universe, and its factor exposures fully explain
 its returns. Details in [`REPORT.md`](REPORT.md).
 
+The report is also published as a single self-contained page:
+**[read the illustrated version](https://claude.ai/code/artifact/d6d5b284-7b34-4fbd-b6ec-15afe6d17f15)**.
+
 ---
 
 ## Quick start

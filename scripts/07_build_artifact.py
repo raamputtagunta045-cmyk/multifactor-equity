@@ -195,6 +195,15 @@ FIGURE_LINE = re.compile(
 )
 
 
+# GitHub needs real Markdown image refs to show the charts, since it has no
+# equivalent of embed_figures(). The artifact does not: embed_figures() injects each
+# figure as a data URI, and a relative src would break the page's self-containment
+# under the artifact CSP. So the image lines are dropped here and the caption that
+# follows each one becomes the figure.
+MD_FIGURE_IMG = re.compile(
+    r"^!\[[^\]]*\]\(\s*results/figures/[^)]+\)\s*\n+", re.MULTILINE)
+
+
 def embed_figures(md: str) -> str:
     def repl(m):
         num, ref, rest = m.group(1), m.group(2).strip(), m.group(3).strip()
@@ -521,13 +530,21 @@ BLOCKED_MACROS = {
     r"\htmlId": "refused by GitHub",
     r"\htmlStyle": "refused by GitHub",
     r"\htmlData": "refused by GitHub",
+    # The named spacing aliases are valid KaTeX but are refused by GitHub's
+    # allowlist, which prints the macro name into the equation. There is no third
+    # spelling worth trying: KaTeX already spaces relations and implicit products
+    # correctly, so the fix is to delete the macro.
+    r"\thinspace": r"refused by GitHub -- drop it, or \quad for a visible gap",
+    r"\medspace": r"refused by GitHub -- drop it, or \quad for a visible gap",
+    r"\thickspace": r"refused by GitHub -- drop it, or \quad for a visible gap",
+    r"\negthinspace": r"refused by GitHub -- drop it",
 }
 
 # Markdown strips a backslash that precedes punctuation before KaTeX ever sees the
 # expression, so these spellings leak bare punctuation into the rendered equation.
 PUNCT_SPACING_FIX = {
-    r"\,": r"\thinspace", r"\;": r"\thickspace",
-    r"\!": r"\negthinspace", r"\:": r"\medspace",
+    r"\,": "drop it", r"\;": "drop it",
+    r"\!": "drop it", r"\:": "drop it",
 }
 
 
@@ -545,8 +562,8 @@ def check_math_macros(md: str) -> list[str]:
                 warnings.append(f"{macro} ({why}) in: {excerpt}")
         for bad, good in PUNCT_SPACING_FIX.items():
             if bad in span:
-                warnings.append(f"{bad} loses its backslash in Markdown; "
-                                f"use {good} in: {excerpt}")
+                warnings.append(f"{bad} loses its backslash in Markdown "
+                                f"({good}) in: {excerpt}")
     return warnings
 
 
@@ -562,6 +579,7 @@ def main():
     # strip the h1 + standfirst; the masthead replaces them
     md = re.sub(r"\A#[^\n]*\n+\*\*[^\n]*\*\*\n+---\n", "", md)
 
+    md = MD_FIGURE_IMG.sub("", md)
     md = embed_figures(md)
     md = append_unreferenced(md)
     md, math_store = convert_math(md)
