@@ -32,6 +32,25 @@ OPS = {
 }
 
 
+# LaTeX spacing macros. Two spellings exist for the same thing: the punctuation
+# forms (\, \; \! \:) and the letter-only aliases (\thinspace ...). REPORT.md uses
+# the letter-only aliases because GitHub's Markdown strips a backslash that precedes
+# punctuation *before* KaTeX sees the expression, which turns "\;=\;" into ";=;".
+# Both spellings are accepted here so the artifact renders either one correctly.
+SPACING_PUNCT = {
+    ",": '<span class="sp-thin"></span>',
+    ":": '<span class="sp-med"></span>',
+    ";": '<span class="sp-thick"></span>',
+    "!": '<span class="sp-neg"></span>',
+}
+SPACING_NAMED = {
+    r"\thinspace": SPACING_PUNCT[","],
+    r"\medspace": SPACING_PUNCT[":"],
+    r"\thickspace": SPACING_PUNCT[";"],
+    r"\negthinspace": SPACING_PUNCT["!"],
+}
+
+
 def _take_braced(s: str, i: int) -> tuple[str, int]:
     """Return the contents of the {...} group starting at s[i] == '{'."""
     assert s[i] == "{"
@@ -54,6 +73,13 @@ def tex(s: str) -> str:
         ch = s[i]
 
         if ch == "\\":
+            # Spacing macros spelled as backslash + punctuation must be caught here:
+            # the command regex below matches backslash + LETTERS only, so "\," never
+            # forms a token and the backslash would be dropped, leaking a bare comma.
+            if i + 1 < len(s) and s[i + 1] in SPACING_PUNCT:
+                out.append(SPACING_PUNCT[s[i + 1]])
+                i += 2
+                continue
             m = re.match(r"\\([A-Za-z]+)", s[i:])
             if m:
                 cmd, ln = "\\" + m.group(1), m.end()
@@ -105,7 +131,8 @@ def tex(s: str) -> str:
                     out.append('<span class="gap"></span>')
                     i = nxt
                     continue
-                if cmd in (r"\,", r"\;", r"\!", r"\:"):
+                if cmd in SPACING_NAMED:
+                    out.append(SPACING_NAMED[cmd])
                     i = nxt
                     continue
                 if cmd in (r"\min", r"\max", r"\log", r"\exp", r"\sum", r"\prod"):
@@ -434,6 +461,11 @@ sub,sup{font-size:.68em; font-style:normal; line-height:0}
 .sqrt::before{content:"√"; margin-left:-.55em; border:0}
 .hat::after{content:"\\0302"}
 .gap{display:inline-block; width:1.6em}
+/* LaTeX spacing macros, at their conventional em widths */
+.sp-thin{display:inline-block; width:.167em}
+.sp-med{display:inline-block; width:.222em}
+.sp-thick{display:inline-block; width:.278em}
+.sp-neg{display:inline-block; margin-left:-.167em}
 
 @media(max-width:680px){
   body{font-size:16px; padding-inline:1.1rem}

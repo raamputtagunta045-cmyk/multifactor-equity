@@ -187,6 +187,11 @@ sub,sup{font-size:.68em; font-style:normal; line-height:0}
 .sqrt::before{content:"&#8730;"; margin-left:-.55em; border:0}
 .hat::after{content:"\0302"}
 .gap{display:inline-block; width:1.6em}
+/* LaTeX spacing macros, at their conventional em widths */
+.sp-thin{display:inline-block; width:.167em}
+.sp-med{display:inline-block; width:.222em}
+.sp-thick{display:inline-block; width:.278em}
+.sp-neg{display:inline-block; margin-left:-.167em}
 
 @media(max-width:680px){
   body{font-size:16px; padding-inline:1.1rem}
@@ -572,16 +577,16 @@ via the factor correlation matrix (&#167;11). Tests
 <code>test_residual_momentum_degenerates_when_windows_coincide</code> pin both directions.</p>
 </blockquote>
 <p><strong>3 &#8212; Low volatility</strong></p>
-<div class="math-block"><span class="up">LOWVOL</span><sub>i,t</sub> = -<span class="sqrt">252</span>;; &#963;(r<sub>i,u</sub>)<sub>u &#8712; (t-L,,t]</sub></div>
+<div class="math-block"><span class="up">LOWVOL</span><sub>i,t</sub> = -<span class="sqrt">252</span><span class="sp-thick"></span><span class="sp-thick"></span> &#963;(r<sub>i,u</sub>)<sub>u &#8712; (t-L,<span class="sp-thin"></span> t]</sub></div>
 <p><strong>4 &#8212; Low beta</strong></p>
-<div class="math-block"><span class="up">LOWBETA</span><sub>i,t</sub> = -<span class="frac"><span class="fnum"><span class="up">Cov</span>(r<sub>i</sub>, r<sub>m</sub>)</span><span class="fden"><span class="up">Var</span>(r<sub>m</sub>)</span></span> |<sub>(t-L,,t]</sub></div>
+<div class="math-block"><span class="up">LOWBETA</span><sub>i,t</sub> = -<span class="frac"><span class="fnum"><span class="up">Cov</span>(r<sub>i</sub>, r<sub>m</sub>)</span><span class="fden"><span class="up">Var</span>(r<sub>m</sub>)</span></span> |<sub>(t-L,<span class="sp-thin"></span> t]</sub></div>
 <p><strong>5 &#8212; Short-term reversal</strong></p>
 <div class="math-block"><span class="up">REV</span><sub>i,t</sub> = -(<span class="frac"><span class="fnum">P<sub>i,t</sub></span><span class="fden">P<sub>i,t-s</sub></span></span> - 1)</div>
 <p>All five are signed so that <strong>higher is better</strong>, which makes compositing a plain
 weighted sum.</p>
 <p><strong>Cross-sectional standardisation.</strong> At each date, within the eligible universe:
 winsorise at the 1st/99th percentiles, then</p>
-<div class="math-block">z<sup>(k)</sup><sub>i,t</sub> = <span class="frac"><span class="fnum">f<sup>(k)</sup><sub>i,t</sub> - &#956;<sub>t</sub>(f<sup>(k)</sup>)</span><span class="fden">&#963;<sub>t</sub>(f<sup>(k)</sup>)</span></span>, <span class="gap"></span> S<sub>i,t</sub> = &#8721;<sub>k</sub> w<sub>k</sub>, z<sup>(k)</sup><sub>i,t</sub></div>
+<div class="math-block">z<sup>(k)</sup><sub>i,t</sub> = <span class="frac"><span class="fnum">f<sup>(k)</sup><sub>i,t</sub> - &#956;<sub>t</sub>(f<sup>(k)</sup>)</span><span class="fden">&#963;<sub>t</sub>(f<sup>(k)</sup>)</span></span>, <span class="gap"></span> S<sub>i,t</sub> = &#8721;<sub>k</sub> w<sub>k</sub><span class="sp-thin"></span> z<sup>(k)</sup><sub>i,t</sub></div>
 <p>re-standardised to unit cross-sectional variance. Winsorising <em>before</em> z-scoring matters:
 a single extreme value inflates <span class="math">&#963;<sub>t</sub></span> and compresses every other stock's score.</p>
 <p>A stock is scored only if it has at least half its factor weight present; the weights
@@ -638,7 +643,7 @@ Newey-West HAC standard errors throughout (Bartlett kernel, <span class="math">L
 a stationary block bootstrap (Politis-Romano) for Sharpe confidence intervals; and the
 Probabilistic / Deflated Sharpe Ratio (Bailey &amp; L&#243;pez de Prado 2014) to correct for
 multiple testing:</p>
-<div class="math-block"><span class="hat">SR<sup>*</sup></span> = <span class="sqrt"><span class="up">Var</span>(SR<sub><span class="up">trials</span></sub>)</span>[(1-&#947;),&#934;<sup>-1</sup>!(1 - <span class="frac"><span class="fnum">1</span><span class="fden">N</span></span>) + &#947;,&#934;<sup>-1</sup>!(1 - <span class="frac"><span class="fnum">1</span><span class="fden">Ne</span></span>)]</div>
+<div class="math-block"><span class="hat">SR<sup>*</sup></span> = <span class="sqrt"><span class="up">Var</span>(SR<sub><span class="up">trials</span></sub>)</span>[(1-&#947;)<span class="sp-thin"></span>&#934;<sup>-1</sup><span class="sp-neg"></span>(1 - <span class="frac"><span class="fnum">1</span><span class="fden">N</span></span>) + &#947;<span class="sp-thin"></span>&#934;<sup>-1</sup><span class="sp-neg"></span>(1 - <span class="frac"><span class="fnum">1</span><span class="fden">Ne</span></span>)]</div>
 <p>where <span class="math">N</span> is the number of configurations examined and <span class="math">&#947;</span> is the Euler-Mascheroni
 constant. Reporting a Sharpe ratio selected as the best of many trials without this
 correction is one of the most common failures in published backtests.</p>
@@ -1078,7 +1083,7 @@ that explicitly skips the most recent month.</p>
 <p>The cause is algebraic, not numerical. OLS with an intercept forces
 <span class="math">&#8721;<sub>u</sub> &#949;<sub>i,u</sub> = 0</span> over the estimation window. Splitting that window into the
 accumulation period and the skipped month gives</p>
-<div class="math-block">&#8721;<sub>u=t-L</sub><sup>t-s</sup> &#949;<sub>i,u</sub> ;=; -&#8721;<sub>u=t-s</sub><sup>t</sup> &#949;<sub>i,u</sub></div>
+<div class="math-block">&#8721;<sub>u=t-L</sub><sup>t-s</sup> &#949;<sub>i,u</sub> <span class="sp-thick"></span>=<span class="sp-thick"></span> -&#8721;<sub>u=t-s</sub><sup>t</sup> &#949;<sub>i,u</sub></div>
 <p>so the "12-month residual momentum" signal was exactly <strong>minus the skipped month's
 residual return</strong> &#8212; a reversal signal with a momentum label. Since reversal is the one
 factor that genuinely works here, the bug was <em>stealing that factor's performance</em> and

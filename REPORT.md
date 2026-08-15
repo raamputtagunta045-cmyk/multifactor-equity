@@ -276,11 +276,11 @@ $$\text{RESMOM}_{i,t} = \frac{\sum_{u = t-L}^{t-s} \varepsilon_{i,u}}{\sigma(\va
 
 **3 — Low volatility**
 
-$$\text{LOWVOL}_{i,t} = -\sqrt{252}\;\; \sigma\big(r_{i,u}\big)_{u \in (t-L,\,t]}$$
+$$\text{LOWVOL}_{i,t} = -\sqrt{252}\thickspace\thickspace \sigma\big(r_{i,u}\big)_{u \in (t-L,\thinspace t]}$$
 
 **4 — Low beta**
 
-$$\text{LOWBETA}_{i,t} = -\frac{\operatorname{Cov}(r_i, r_m)}{\operatorname{Var}(r_m)} \bigg|_{(t-L,\,t]}$$
+$$\text{LOWBETA}_{i,t} = -\frac{\operatorname{Cov}(r_i, r_m)}{\operatorname{Var}(r_m)} \bigg|_{(t-L,\thinspace t]}$$
 
 **5 — Short-term reversal**
 
@@ -292,7 +292,7 @@ weighted sum.
 **Cross-sectional standardisation.** At each date, within the eligible universe:
 winsorise at the 1st/99th percentiles, then
 
-$$z^{(k)}_{i,t} = \frac{f^{(k)}_{i,t} - \mu_t\big(f^{(k)}\big)}{\sigma_t\big(f^{(k)}\big)}, \qquad S_{i,t} = \sum_k w_k\, z^{(k)}_{i,t}$$
+$$z^{(k)}_{i,t} = \frac{f^{(k)}_{i,t} - \mu_t\big(f^{(k)}\big)}{\sigma_t\big(f^{(k)}\big)}, \qquad S_{i,t} = \sum_k w_k\thinspace z^{(k)}_{i,t}$$
 
 re-standardised to unit cross-sectional variance. Winsorising *before* z-scoring matters:
 a single extreme value inflates $\sigma_t$ and compresses every other stock's score.
@@ -346,7 +346,7 @@ a stationary block bootstrap (Politis-Romano) for Sharpe confidence intervals; a
 Probabilistic / Deflated Sharpe Ratio (Bailey & López de Prado 2014) to correct for
 multiple testing:
 
-$$\widehat{SR^*} = \sqrt{\operatorname{Var}(SR_{\text{trials}})}\left[(1-\gamma)\,\Phi^{-1}\!\left(1 - \tfrac{1}{N}\right) + \gamma\,\Phi^{-1}\!\left(1 - \tfrac{1}{Ne}\right)\right]$$
+$$\widehat{SR^*} = \sqrt{\operatorname{Var}(SR_{\text{trials}})}\left[(1-\gamma)\thinspace\Phi^{-1}\negthinspace\left(1 - \tfrac{1}{N}\right) + \gamma\thinspace\Phi^{-1}\negthinspace\left(1 - \tfrac{1}{Ne}\right)\right]$$
 
 where $N$ is the number of configurations examined and $\gamma$ is the Euler-Mascheroni
 constant. Reporting a Sharpe ratio selected as the best of many trials without this
@@ -474,7 +474,7 @@ The cause is algebraic, not numerical. OLS with an intercept forces
 $\sum_u \varepsilon_{i,u} = 0$ over the estimation window. Splitting that window into the
 accumulation period and the skipped month gives
 
-$$\sum_{u=t-L}^{t-s} \varepsilon_{i,u} \;=\; -\sum_{u=t-s}^{t} \varepsilon_{i,u}$$
+$$\sum_{u=t-L}^{t-s} \varepsilon_{i,u} \thickspace=\thickspace -\sum_{u=t-s}^{t} \varepsilon_{i,u}$$
 
 so the "12-month residual momentum" signal was exactly **minus the skipped month's
 residual return** — a reversal signal with a momentum label. Since reversal is the one
