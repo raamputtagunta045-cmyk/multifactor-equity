@@ -1,0 +1,568 @@
+$ABC: possibly delisted; no timezone found
+$ACS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ABKFQ: possibly delisted; no timezone found
+$ABS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ALXN: possibly delisted; no timezone found
+$AFS.A: possibly delisted; no timezone found
+$AKS: possibly delisted; no timezone found
+$AGN: possibly delisted; no timezone found
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: AL"}}}
+$AABA: possibly delisted; no timezone found
+$ACAS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$AL: possibly delisted; no timezone found
+$ADS: possibly delisted; no timezone found
+$AMCC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$AHM: possibly delisted; no timezone found
+$ALTR: possibly delisted; no timezone found
+$ABMD: possibly delisted; no timezone found
+$AGC: possibly delisted; no timezone found
+$ACKH: possibly delisted; no timezone found
+$AAMRQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+
+19 Failed downloads:
+['ABC', 'ABKFQ', 'ALXN', 'AFS.A', 'AKS', 'AGN', 'AABA', 'AL', 'ADS', 'AHM', 'ALTR', 'ABMD', 'AGC', 'ACKH']: possibly delisted; no timezone found
+['ACS', 'ABS', 'ACAS', 'AMCC', 'AAMRQ']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+[1/4] historical S&P 500 membership ...
+      2718 change dates, 1996-01-02 -> 2026-06-30
+      1206 distinct tickers ever in the index
+[2/4] Fama-French factors ...
+      15854 daily obs, 1963-07-01 -> 2026-06-30
+      columns: ['Mkt-RF', 'SMB', 'HML', 'RMW', 'CMA', 'RF', 'MOM']
+[3/4] benchmark (SPY) ...
+      7672 daily obs, 1996-01-02 -> 2026-06-29
+[4/4] prices for 1206 tickers (this takes several minutes) ...
+  batch 1/21: 41/60 tickers returned data
+$ASN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$AT: possibly delisted; no timezone found
+$ANDW: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ATGE: possibly delisted; no timezone found
+$ATVI: possibly delisted; no timezone found
+$AWE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$AYE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ARG: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$APCC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$AVP: possibly delisted; no timezone found
+$ANRZQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$AZA.A: possibly delisted; no timezone found
+$APOL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ANTM: possibly delisted; no timezone found
+$ANSS: possibly delisted; no timezone found
+$AW: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ARNC: possibly delisted; no timezone found
+$ARC: possibly delisted; no timezone found
+
+18 Failed downloads:
+['ASN', 'ANDW', 'AWE', 'AYE', 'ARG', 'APCC', 'ANRZQ', 'APOL', 'AW']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['AT', 'ATGE', 'ATVI', 'AVP', 'AZA.A', 'ANTM', 'ANSS', 'ARNC', 'ARC']: possibly delisted; no timezone found
+  batch 2/21: 42/60 tickers returned data
+$BRL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BDK: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BCR: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BF.B: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BHMSQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BVSN: possibly delisted; no timezone found
+$BHGE: possibly delisted; no timezone found
+$BGEN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BOL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BLY: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BFI: possibly delisted; no timezone found
+$BK: possibly delisted; no timezone found
+$BMGCA: possibly delisted; no timezone found
+$BEV: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BT: possibly delisted; no timezone found
+$BJS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BIG: possibly delisted; no timezone found
+$BNI: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BGG: possibly delisted; no timezone found
+$BSC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BKB: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BMC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BLL: possibly delisted; no timezone found
+$BTUUQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BLS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BRCM: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$BRK.B: possibly delisted; no timezone found
+$BBI: possibly delisted; no timezone found
+$BFO: possibly delisted; no timezone found
+$BMET: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+
+30 Failed downloads:
+['BRL', 'BDK', 'BCR', 'BF.B', 'BHMSQ', 'BGEN', 'BOL', 'BLY', 'BEV', 'BJS', 'BNI', 'BSC', 'BKB', 'BMC', 'BTUUQ', 'BLS', 'BRCM', 'BMET']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['BVSN', 'BHGE', 'BFI', 'BK', 'BMGCA', 'BT', 'BIG', 'BGG', 'BLL', 'BRK.B', 'BBI', 'BFO']: possibly delisted; no timezone found
+  batch 3/21: 30/60 tickers returned data
+$CGP: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CBH: possibly delisted; no timezone found
+$CFL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CBB: possibly delisted; no timezone found
+$CBS: possibly delisted; no timezone found
+$BXLT: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CCTYQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CEPH: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CEN: possibly delisted; no timezone found
+$CELG: possibly delisted; no timezone found
+$CFN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CDAY: possibly delisted; no timezone found
+$CFC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CIT.A: possibly delisted; no timezone found
+$CBE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CIN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CBSS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CA: possibly delisted; no timezone found
+$CHK: possibly delisted; no timezone found
+$CCE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CERN: possibly delisted; no timezone found
+$CITGQ: possibly delisted; no timezone found
+
+22 Failed downloads:
+['CGP', 'CFL', 'BXLT', 'CCTYQ', 'CEPH', 'CFN', 'CFC', 'CBE', 'CIN', 'CBSS', 'CCE']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['CBH', 'CBB', 'CBS', 'CEN', 'CELG', 'CDAY', 'CIT.A', 'CA', 'CHK', 'CERN', 'CITGQ']: possibly delisted; no timezone found
+  batch 4/21: 38/60 tickers returned data
+$CVC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CTRA: possibly delisted; no timezone found
+$CTXS: possibly delisted; no timezone found
+$COC.B: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CNW: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CTX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CMA: possibly delisted; no timezone found
+$COG: possibly delisted; no timezone found
+$CMX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CMVT: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CPQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CTB: possibly delisted; no timezone found
+$CTLT: possibly delisted; no timezone found
+$CMB: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CNG: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CRR: possibly delisted; no timezone found
+$CTL: possibly delisted; no timezone found
+$CPNLQ: possibly delisted; no timezone found
+$CPGX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$COV: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CSE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CMCSK: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+
+22 Failed downloads:
+['CVC', 'COC.B', 'CNW', 'CTX', 'CMX', 'CMVT', 'CPQ', 'CMB', 'CNG', 'CPGX', 'COV', 'CSE', 'CMCSK']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['CTRA', 'CTXS', 'CMA', 'COG', 'CTB', 'CTLT', 'CRR', 'CTL', 'CPNLQ']: possibly delisted; no timezone found
+  batch 5/21: 38/60 tickers returned data
+$DGN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$DALRQ: possibly delisted; no timezone found
+$DPHIQ: possibly delisted; no timezone found
+$DCNAQ: possibly delisted; no timezone found
+$DI: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$DISH: possibly delisted; no timezone found
+$DNR: possibly delisted; no timezone found
+$CYM: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$DO: possibly delisted; no timezone found
+$DNB: possibly delisted; no timezone found
+$DISCA: possibly delisted; no timezone found
+$CYR: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$DISCK: possibly delisted; no timezone found
+$DFS: possibly delisted; no timezone found
+$DJ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$DWDP: possibly delisted; no timezone found
+$DTV: possibly delisted; no timezone found
+$CXO: possibly delisted; no timezone found
+$DRE: possibly delisted; no timezone found
+$DWD: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$DF: possibly delisted; no timezone found
+$DAY: possibly delisted; no timezone found
+$DDR: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$CVH: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+
+24 Failed downloads:
+['DGN', 'DI', 'CYM', 'CYR', 'DJ', 'DWD', 'DDR', 'CVH']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['DALRQ', 'DPHIQ', 'DCNAQ', 'DISH', 'DNR', 'DO', 'DNB', 'DISCA', 'DISCK', 'DFS', 'DWDP', 'DTV', 'CXO', 'DRE', 'DF', 'DAY']: possibly delisted; no timezone found
+  batch 6/21: 36/60 tickers returned data
+$EKDKQ: possibly delisted; no timezone found
+$ETFC: possibly delisted; no timezone found
+$FBHS: possibly delisted; no timezone found
+$FBF: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$EDS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ENRNQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ESRX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$FBO: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$EOP: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ENDP: possibly delisted; no timezone found
+$ESV: possibly delisted; no timezone found
+
+11 Failed downloads:
+['EKDKQ', 'ETFC', 'FBHS', 'ENDP', 'ESV']: possibly delisted; no timezone found
+['FBF', 'EDS', 'ENRNQ', 'ESRX', 'FBO', 'EOP']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+  batch 7/21: 49/60 tickers returned data
+$FII: possibly delisted; no timezone found
+$FLMIQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$FRX: possibly delisted; no timezone found
+$GAPTQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$FDC: possibly delisted; no timezone found
+$FTR: possibly delisted; no timezone found
+$FLIR: possibly delisted; no timezone found
+$GFS.A: possibly delisted; no timezone found
+$FPC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$FJ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$FTL.A: possibly delisted; no timezone found
+$FWLT: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$FDO: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$FI: possibly delisted; no timezone found
+$FSL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$FLTWQ: possibly delisted; no timezone found
+$FLT: possibly delisted; no timezone found
+$FSH: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$GAS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$FL: possibly delisted; no timezone found
+$FRC: possibly delisted; no timezone found
+$GDW: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+
+22 Failed downloads:
+['FII', 'FRX', 'FDC', 'FTR', 'FLIR', 'GFS.A', 'FTL.A', 'FI', 'FLTWQ', 'FLT', 'FL', 'FRC']: possibly delisted; no timezone found
+['FLMIQ', 'GAPTQ', 'FPC', 'FJ', 'FWLT', 'FDO', 'FSL', 'FSH', 'GAS', 'GDW']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+  batch 8/21: 38/60 tickers returned data
+$HCBK: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$HOLX: possibly delisted; no timezone found
+$HAR: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$HFS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$HET: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$GPS: possibly delisted; no timezone found
+$GRA: possibly delisted; no timezone found
+$HMA: possibly delisted; no timezone found
+$GR: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$GX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$HM: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$HI: possibly delisted; no timezone found
+$GGP: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$HCP: possibly delisted; no timezone found
+$GPU: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$GMCR: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$HCR: possibly delisted; no timezone found
+$GWF: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$HBOC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$GTW: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$HES: possibly delisted; no timezone found
+$HFC: possibly delisted; no timezone found
+$HDLM: possibly delisted; no timezone found
+$GIDL: possibly delisted; no timezone found
+$HBI: possibly delisted; no timezone found
+$HNZ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$GLK: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+
+27 Failed downloads:
+['HOLX', 'GPS', 'GRA', 'HMA', 'HI', 'HCP', 'HCR', 'HES', 'HFC', 'HDLM', 'GIDL', 'HBI']: possibly delisted; no timezone found
+['HCBK', 'HAR', 'HFS', 'HET', 'GR', 'GX', 'HM', 'GGP', 'GPU', 'GMCR', 'GWF', 'HBOC', 'GTW', 'HNZ', 'GLK']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+  batch 9/21: 33/60 tickers returned data
+$HPH: possibly delisted; no timezone found
+$JCP: possibly delisted; no timezone found
+$IPG: possibly delisted; no timezone found
+$HPC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$INCLF: possibly delisted; no timezone found
+$IKN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$HSP: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$I: possibly delisted; no timezone found
+$HSH: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$IGT: possibly delisted; no timezone found
+$JEC: possibly delisted; no timezone found
+$IMNX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$JH: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$JHF: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$IAC: possibly delisted; no timezone found
+$HRS: possibly delisted; no timezone found
+
+16 Failed downloads:
+['HPH', 'JCP', 'IPG', 'INCLF', 'I', 'IGT', 'JEC', 'IAC', 'HRS']: possibly delisted; no timezone found
+['HPC', 'IKN', 'HSP', 'HSH', 'IMNX', 'JH', 'JHF']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+  batch 10/21: 44/60 tickers returned data
+$JOS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$JWN: possibly delisted; no timezone found
+$KATE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$LLX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$JOY: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$JNY: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$LLL: possibly delisted; no timezone found
+$KWP: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$K: possibly delisted; no timezone found
+$JNS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$KM: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$KORS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$LDG: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$LLTC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$LM: possibly delisted; no timezone found
+$KRI: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$KSU: possibly delisted; no timezone found
+$KSE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$LDW.B: possibly delisted; no timezone found
+$KRB: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$JNPR: possibly delisted; no timezone found
+$LEHMQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$JP: possibly delisted; no timezone found
+$KRFT: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+
+24 Failed downloads:
+['JOS', 'KATE', 'LLX', 'JOY', 'JNY', 'KWP', 'JNS', 'KM', 'KORS', 'LDG', 'LLTC', 'KRI', 'KSE', 'KRB', 'LEHMQ', 'KRFT']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['JWN', 'LLL', 'K', 'LM', 'KSU', 'LDW.B', 'JNPR', 'JP']: possibly delisted; no timezone found
+  batch 11/21: 36/60 tickers returned data
+$MKG: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$LUB: possibly delisted; no timezone found
+$MII: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MAY: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$LVLT: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$LOR: possibly delisted; no timezone found
+$MJN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MIL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$LSI: possibly delisted; no timezone found
+$MEE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MEA: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$LO: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MEL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MER: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+$MERQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MDR: possibly delisted; no timezone found
+$MMC: possibly delisted; no timezone found
+$LXK: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MDP: possibly delisted; no timezone found
+$MFE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MHS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+
+21 Failed downloads:
+['MKG', 'MII', 'MAY', 'LVLT', 'MJN', 'MIL', 'MEE', 'MEA', 'LO', 'MEL', 'MERQ', 'LXK', 'MFE', 'MHS']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['LUB', 'LOR', 'LSI', 'MDR', 'MMC', 'MDP']: possibly delisted; no timezone found
+['MER']: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+  batch 12/21: 39/60 tickers returned data
+$NAV: possibly delisted; no timezone found
+$MTL: possibly delisted; no timezone found
+$MYL: possibly delisted; no timezone found
+$NGH: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MTLQQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$NLC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MWW: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$NCR: possibly delisted; no timezone found
+$MNK: possibly delisted; no timezone found
+$NBL: possibly delisted; no timezone found
+$MON: possibly delisted; no timezone found
+$MOLX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MYG: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$NFB: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MWI: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MRO: possibly delisted; no timezone found
+$NCC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MZIAQ: possibly delisted; no timezone found
+$MXIM: possibly delisted; no timezone found
+$NFX: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+$NAE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$NCE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$MWV: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+
+23 Failed downloads:
+['NAV', 'MTL', 'MYL', 'NCR', 'MNK', 'NBL', 'MON', 'MRO', 'MZIAQ', 'MXIM']: possibly delisted; no timezone found
+['NGH', 'MTLQQ', 'NLC', 'MWW', 'MOLX', 'MYG', 'NFB', 'MWI', 'NCC', 'NAE', 'NCE', 'MWV']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['NFX']: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+  batch 13/21: 37/60 tickers returned data
+$NOVL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$NYN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$OMX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$OAT: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ONE: possibly delisted; no timezone found
+$NRTLQ: possibly delisted; no timezone found
+$PBCT: possibly delisted; no timezone found
+$PCH: possibly delisted; no timezone found
+$NLSN: possibly delisted; no timezone found
+$NXTL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PBG: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$NVLS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PAS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$NMK: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$NYX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PALM: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ORX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$OWENQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$NLV: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ODP: possibly delisted; no timezone found
+$OK: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$NLOK: possibly delisted; no timezone found
+
+22 Failed downloads:
+['NOVL', 'NYN', 'OMX', 'OAT', 'NXTL', 'PBG', 'NVLS', 'PAS', 'NMK', 'NYX', 'PALM', 'ORX', 'OWENQ', 'NLV', 'OK']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['ONE', 'NRTLQ', 'PBCT', 'PCH', 'NLSN', 'ODP', 'NLOK']: possibly delisted; no timezone found
+  batch 14/21: 38/60 tickers returned data
+$PPW: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PHA: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PCP: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PKI: possibly delisted; no timezone found
+$PDG: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PNU: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PXD: possibly delisted; no timezone found
+$PMCS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PVN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PGN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PSFT: possibly delisted; no timezone found
+$PDCO: possibly delisted; no timezone found
+$PGL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PVT: possibly delisted; no timezone found
+$PHB: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+$PRD: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PX: possibly delisted; no timezone found
+$PETM: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PTV: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PEAK: possibly delisted; no timezone found
+$PEL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$PET: possibly delisted; no timezone found
+$PLL: possibly delisted; no timezone found
+
+23 Failed downloads:
+['PPW', 'PHA', 'PCP', 'PDG', 'PNU', 'PMCS', 'PVN', 'PGN', 'PGL', 'PRD', 'PETM', 'PTV', 'PEL']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['PKI', 'PXD', 'PSFT', 'PDCO', 'PVT', 'PX', 'PEAK', 'PET', 'PLL']: possibly delisted; no timezone found
+['PHB']: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+  batch 15/21: 37/60 tickers returned data
+$RDS.A: possibly delisted; no timezone found
+$QLGC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SAI: possibly delisted; no timezone found
+$RAD: possibly delisted; no timezone found
+$RDC: possibly delisted; no timezone found
+$QEP: possibly delisted; no timezone found
+$RE: possibly delisted; no timezone found
+$SAPE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$ROH: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$RYI: possibly delisted; no timezone found
+$SATS: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+$RSHCQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$RX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$RLM: possibly delisted; no timezone found
+$RAI: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$RHT: possibly delisted; no timezone found
+$SBL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$RTN: possibly delisted; no timezone found
+$RATL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$RNB: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$QTRN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$RRD: possibly delisted; no timezone found
+$RBD: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$RBK: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$RML: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$RYC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+
+26 Failed downloads:
+['RDS.A', 'SAI', 'RAD', 'RDC', 'QEP', 'RE', 'RYI', 'RLM', 'RHT', 'RTN', 'RRD']: possibly delisted; no timezone found
+['QLGC', 'SAPE', 'ROH', 'RSHCQ', 'RX', 'RAI', 'SBL', 'RATL', 'RNB', 'QTRN', 'RBD', 'RBK', 'RML', 'RYC']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['SATS']: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+  batch 16/21: 34/60 tickers returned data
+$SFA: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SNI: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SMS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SOV: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SOTR: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SIAL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SUNEQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SHN: possibly delisted; no timezone found
+$SRR: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SRCL: possibly delisted; no timezone found
+$SFS: possibly delisted; no timezone found
+$SLR: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SEE: possibly delisted; no timezone found
+$SGID: possibly delisted; no timezone found
+$STR: possibly delisted; no timezone found
+$STJ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SEBL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SWN: possibly delisted; no timezone found
+$SIVB: possibly delisted; no timezone found
+$SNV: possibly delisted; no timezone found
+$STO: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SK: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+
+22 Failed downloads:
+['SFA', 'SNI', 'SMS', 'SOV', 'SOTR', 'SIAL', 'SUNEQ', 'SRR', 'SLR', 'STJ', 'SEBL', 'STO']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['SHN', 'SRCL', 'SFS', 'SEE', 'SGID', 'STR', 'SWN', 'SIVB', 'SNV']: possibly delisted; no timezone found
+['SK']: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+  batch 17/21: 38/60 tickers returned data
+$TRB: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$TRW: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$TMC.A: possibly delisted; no timezone found
+$TLAB: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$TSG: possibly delisted; no timezone found
+$TIE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$TA: possibly delisted; no timezone found
+$TNB: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SWY: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$TIF: possibly delisted; no timezone found
+$TDM: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$SYMC: possibly delisted; no timezone found
+$SXCL: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$TSS: possibly delisted; no timezone found
+$TEG: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$TCOMA: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$TMK: possibly delisted; no timezone found
+$TGNA: possibly delisted; no timezone found
+$TOY: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$TIN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+
+20 Failed downloads:
+['TRB', 'TRW', 'TLAB', 'TIE', 'TNB', 'SWY', 'TDM', 'SXCL', 'TEG', 'TCOMA', 'TOY', 'TIN']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['TMC.A', 'TSG', 'TA', 'TIF', 'SYMC', 'TSS', 'TMK', 'TGNA']: possibly delisted; no timezone found
+  batch 18/21: 40/60 tickers returned data
+$UTX: possibly delisted; no timezone found
+$TXU: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$UVN: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$USH: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$USS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$UCM: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$TWC: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$USW: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$USHC: possibly delisted; no timezone found
+$UMG: possibly delisted; no timezone found
+$VIAC: possibly delisted; no timezone found
+$TWTR: possibly delisted; no timezone found
+$TUP: possibly delisted; no timezone found
+$VAR: possibly delisted; no timezone found
+$VIAB: possibly delisted; no timezone found
+$UPR: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$VAT: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$UAWGQ: possibly delisted; no timezone found
+$UN: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+
+19 Failed downloads:
+['UTX', 'UMG', 'VIAC', 'USHC', 'TWTR', 'TUP', 'VAR', 'VIAB', 'UAWGQ']: possibly delisted; no timezone found
+['TXU', 'UVN', 'USH', 'USS', 'UCM', 'TWC', 'USW', 'UPR', 'VAT']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['UN']: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+  batch 19/21: 41/60 tickers returned data
+$WPX: possibly delisted; no timezone found
+$XLNX: possibly delisted; no timezone found
+$WMX: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$WYND: possibly delisted; no timezone found
+$WAMUQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$VTSS: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$XTO: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$WIN: possibly delisted; no timezone found
+$WLL: possibly delisted; no timezone found
+$WLTW: possibly delisted; no timezone found
+$YNR: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$VSTNQ: possibly delisted; no timezone found
+$WFT: possibly delisted; no timezone found
+$X: possibly delisted; no timezone found
+$WYE: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$WFM: No data found, symbol may be delisted
+$XEC: possibly delisted; no timezone found
+$WNDXQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$WCG: possibly delisted; no timezone found
+$WAI: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+$WBA: possibly delisted; no timezone found
+$WCOEQ: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$WLA: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$WWY: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$WLP: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+$WRK: possibly delisted; no timezone found
+$XL: possibly delisted; no timezone found
+
+27 Failed downloads:
+['WPX', 'XLNX', 'WYND', 'WIN', 'WLL', 'WLTW', 'VSTNQ', 'WFT', 'X', 'XEC', 'WCG', 'WBA', 'WRK', 'XL']: possibly delisted; no timezone found
+['WMX', 'WAMUQ', 'VTSS', 'XTO', 'YNR', 'WYE', 'WNDXQ', 'WCOEQ', 'WLA', 'WWY', 'WLP']: possibly delisted; no price data found  (1d 1996-01-01 -> 2026-06-30)
+['WFM']: No data found, symbol may be delisted
+['WAI']: Data doesn't exist for startDate = 820472400, endDate = 1782792000
+  batch 20/21: 33/60 tickers returned data
+$YRCW: possibly delisted; no timezone found
+
+1 Failed download:
+['YRCW']: possibly delisted; no timezone found
+  batch 21/21: 5/6 tickers returned data
+
+  downloaded 767 tickers; 439 unavailable
+      adj_close: 7672 rows x 767 tickers
+      close: 7672 rows x 767 tickers
+      volume: 7672 rows x 767 tickers
+
+done in 67s -> C:\Users\raamd\OneDrive\projects\multifactor-equity\data\interim

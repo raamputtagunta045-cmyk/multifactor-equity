@@ -1,0 +1,20 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Tooling scratch
+.claude-flow/
+
+# Derived data cache -- regenerate with scripts/01_download_data.py (~10 min).
+# Source data in data/raw/ IS tracked, so the pipeline is reproducible from a clone.
+data/interim/

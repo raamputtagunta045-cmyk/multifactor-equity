@@ -1,0 +1,198 @@
+======================================================================
+1. CONTROLS: equal-weight universe and random-portfolio null
+======================================================================
+  329 monthly cross-sections
+
+                                CAGR     vol  Sharpe
+Equal-weight ENTIRE universe  0.0924  0.1686  0.6106
+Strategy EW (top 50)          0.0702  0.1350  0.5719
+Strategy IC-wtd (top 50)      0.0808  0.2064  0.4789
+
+  running random-portfolio Monte Carlo null (500 sims) ...
+
+  Null distribution of RANDOM 50-stock portfolios from the same universe:
+           CAGR       vol    Sharpe
+count  500.0000  500.0000  500.0000
+mean     0.0741    0.1725    0.5022
+std      0.0074    0.0028    0.0409
+min      0.0515    0.1652    0.3782
+5%       0.0617    0.1680    0.4353
+25%      0.0687    0.1706    0.4724
+50%      0.0743    0.1726    0.5057
+75%      0.0791    0.1744    0.5302
+95%      0.0866    0.1768    0.5721
+max      0.0937    0.1823    0.6070
+
+  Where the real strategies sit in the random-portfolio null:
+        portfolio   CAGR  Sharpe  pctile_vs_null_CAGR  pctile_vs_null_Sharpe
+      Strategy EW 0.0702  0.5719                0.310                  0.948
+  Strategy IC-wtd 0.0808  0.4789                0.810                  0.288
+Equal-wt universe 0.0924  0.6106                0.996                  1.000
+
+======================================================================
+2. PARAMETER SENSITIVITY (one knob at a time, full sample)
+======================================================================
+  n_long=25: net Sharpe 0.408, turnover 13.7x
+  n_long=50: net Sharpe 0.422, turnover 12.9x
+  n_long=75: net Sharpe 0.445, turnover 11.7x
+  n_long=100: net Sharpe 0.466, turnover 10.7x
+  n_long=150: net Sharpe 0.493, turnover 8.8x
+  rebalance=ME: net Sharpe 0.422, turnover 12.9x
+  rebalance=QE: net Sharpe 0.489, turnover 5.0x
+  weighting=equal: net Sharpe 0.434, turnover 11.7x
+  weighting=score_tilt: net Sharpe 0.422, turnover 12.9x
+  weighting=inverse_vol: net Sharpe 0.435, turnover 11.3x
+  mom_lookback=126: net Sharpe 0.426, turnover 13.7x
+  mom_lookback=189: net Sharpe 0.436, turnover 13.0x
+  mom_lookback=252: net Sharpe 0.422, turnover 12.9x
+  mom_lookback=378: net Sharpe 0.415, turnover 12.9x
+  rev_lookback=10: net Sharpe 0.500, turnover 12.5x
+  rev_lookback=21: net Sharpe 0.422, turnover 12.9x
+  rev_lookback=42: net Sharpe 0.485, turnover 10.3x
+  max_weight=0.03: net Sharpe 0.428, turnover 12.6x
+  max_weight=0.05: net Sharpe 0.422, turnover 12.9x
+  max_weight=0.1: net Sharpe 0.420, turnover 13.0x
+  turnover_buffer=0.0: net Sharpe 0.422, turnover 12.9x
+  turnover_buffer=0.25: net Sharpe 0.441, turnover 11.9x
+  turnover_buffer=0.5: net Sharpe 0.460, turnover 10.9x
+  turnover_buffer=1.0: net Sharpe 0.450, turnover 9.4x
+  min_dollar_volume=1000000.0: net Sharpe 0.421, turnover 12.9x
+  min_dollar_volume=5000000.0: net Sharpe 0.422, turnover 12.9x
+  min_dollar_volume=20000000.0: net Sharpe 0.415, turnover 13.1x
+
+             param       value  CAGR_net  CAGR_gross  Sharpe_net  Sharpe_gross   MaxDD  ann_turnover  IR_vs_bmk
+           n_long          25    0.0787      0.0906      0.4079        0.4712 -0.5565       13.6536    -0.0884
+           n_long          50    0.0804      0.0916      0.4221        0.4834 -0.5524       12.9462    -0.0885
+           n_long          75    0.0840      0.0942      0.4453        0.5016 -0.5454       11.7412    -0.0658
+           n_long         100    0.0876      0.0970      0.4665        0.5179 -0.5428       10.6817    -0.0364
+           n_long         150    0.0927      0.1005      0.4931        0.5355 -0.5357        8.8489     0.0144
+        rebalance          ME    0.0804      0.0916      0.4221        0.4834 -0.5524       12.9462    -0.0885
+        rebalance          QE    0.0930      0.0974      0.4887        0.5120 -0.4866        4.9673     0.0202
+        weighting       equal    0.0819      0.0921      0.4342        0.4906 -0.5371       11.7485    -0.0837
+        weighting  score_tilt    0.0804      0.0916      0.4221        0.4834 -0.5524       12.9462    -0.0885
+        weighting inverse_vol    0.0800      0.0898      0.4352        0.4918 -0.4963       11.2868    -0.1067
+     mom_lookback         126    0.0803      0.0922      0.4265        0.4926 -0.5452       13.6891    -0.0923
+     mom_lookback         189    0.0826      0.0939      0.4362        0.4984 -0.5400       13.0075    -0.0715
+     mom_lookback         252    0.0804      0.0916      0.4221        0.4834 -0.5524       12.9462    -0.0885
+     mom_lookback         378    0.0790      0.0902      0.4146        0.4757 -0.5507       12.8962    -0.0991
+     rev_lookback          10    0.0936      0.1047      0.4996        0.5599 -0.5054       12.5284     0.0178
+     rev_lookback          21    0.0804      0.0916      0.4221        0.4834 -0.5524       12.9462    -0.0885
+     rev_lookback          42    0.0908      0.0998      0.4847        0.5342 -0.5549       10.2698    -0.0055
+       max_weight        0.03    0.0811      0.0921      0.4280        0.4882 -0.5471       12.6063    -0.0854
+       max_weight        0.05    0.0804      0.0916      0.4221        0.4834 -0.5524       12.9462    -0.0885
+       max_weight         0.1    0.0801      0.0913      0.4203        0.4817 -0.5525       12.9662    -0.0904
+  turnover_buffer         0.0    0.0804      0.0916      0.4221        0.4834 -0.5524       12.9462    -0.0885
+  turnover_buffer        0.25    0.0836      0.0940      0.4413        0.4981 -0.5487       11.9282    -0.0630
+  turnover_buffer         0.5    0.0869      0.0963      0.4602        0.5122 -0.5318       10.8742    -0.0368
+  turnover_buffer         1.0    0.0845      0.0927      0.4499        0.4951 -0.5323        9.3870    -0.0581
+min_dollar_volume   1000000.0    0.0802      0.0914      0.4212        0.4823 -0.5528       12.9032    -0.0903
+min_dollar_volume   5000000.0    0.0804      0.0916      0.4221        0.4834 -0.5524       12.9462    -0.0885
+min_dollar_volume  20000000.0    0.0792      0.0905      0.4150        0.4767 -0.5496       13.0533    -0.0989
+
+======================================================================
+3. PERFORMANCE BY MARKET REGIME
+======================================================================
+                        n_days  strat_CAGR  bmk_CAGR  excess  strat_Sharpe  bmk_Sharpe  strat_MaxDD  bmk_MaxDD      IR
+regime                                                                                                                
+Dot-com bust 1999-2002    1004      0.0745   -0.0691  0.1436        0.2553     -0.3853      -0.2196    -0.4752  0.8057
+Recovery 2003-2007        1258      0.1216    0.1264 -0.0049        0.7639      0.7703      -0.1303    -0.1373 -0.0840
+GFC 2008-2009              505     -0.1602   -0.1062 -0.0540       -0.5249     -0.1767      -0.5043    -0.5187 -0.5628
+QE bull 2010-2019         2516      0.1267    0.1346 -0.0079        0.8997      0.8986      -0.1695    -0.1935 -0.1103
+COVID 2020                 253     -0.0362    0.1825 -0.2188        0.0444      0.6515      -0.3654    -0.3372 -1.3218
+Inflation/bear 2022        251     -0.0278   -0.1824  0.1546       -0.1129     -0.7626      -0.1510    -0.2450  1.0514
+AI bull 2023-2026          874      0.1021    0.2259 -0.1238        0.4439      1.1007      -0.1294    -0.1876 -0.8971
+
+======================================================================
+4. TRANSACTION-COST BREAK-EVEN
+======================================================================
+  0 bps: net CAGR 0.0916
+  2 bps: net CAGR 0.0888
+  5 bps: net CAGR 0.0846
+  10 bps: net CAGR 0.0776
+  15 bps: net CAGR 0.0706
+  20 bps: net CAGR 0.0637
+  30 bps: net CAGR 0.0500
+  50 bps: net CAGR 0.0230
+ total_bps_1way  CAGR_net  Sharpe_net  ann_turnover  excess_CAGR      IR
+              0    0.0916      0.4834       12.9462       0.0053  0.0050
+              2    0.0888      0.4681       12.9462       0.0025 -0.0184
+              5    0.0846      0.4451       12.9462      -0.0018 -0.0535
+             10    0.0776      0.4067       12.9462      -0.0088 -0.1119
+             15    0.0706      0.3683       12.9462      -0.0157 -0.1701
+             20    0.0637      0.3299       12.9462      -0.0226 -0.2282
+             30    0.0500      0.2529       12.9462      -0.0363 -0.3435
+             50    0.0230      0.0994       12.9462      -0.0633 -0.5697
+
+  break-even one-way cost vs SPY: 3.74 bps
+
+======================================================================
+5. WALK-FORWARD (6y train / 2y test, weights re-fitted each fold)
+======================================================================
+  fold 2005-01-01..2006-12-31: Sharpe 0.675
+  fold 2007-01-01..2008-12-31: Sharpe -0.918
+  fold 2009-01-01..2010-12-31: Sharpe 1.199
+  fold 2011-01-01..2012-12-31: Sharpe 0.323
+  fold 2013-01-01..2014-12-31: Sharpe 1.740
+  fold 2015-01-01..2016-12-31: Sharpe 0.577
+  fold 2017-01-01..2018-12-31: Sharpe 0.092
+  fold 2019-01-01..2020-12-31: Sharpe 0.396
+  fold 2021-01-01..2022-12-31: Sharpe 0.094
+  fold 2023-01-01..2024-12-31: Sharpe -0.373
+  fold 2025-01-01..2026-06-30: Sharpe 0.245
+
+                  train                   test  test_CAGR  test_Sharpe  test_MaxDD  all_IC_IR_negative  w_momentum  w_residual_momentum  w_low_volatility  w_low_beta  w_reversal  bmk_CAGR  excess
+1999-01-01..2004-12-31 2005-01-01..2006-12-31     0.1374       0.6746     -0.1310               False      0.1390               0.2713            0.0000      0.0198      0.5699    0.1022  0.0352
+2001-01-01..2006-12-31 2007-01-01..2008-12-31    -0.3345      -0.9184     -0.7028               False      0.1050               0.2294            0.0000      0.1663      0.4993   -0.1848 -0.1497
+2003-01-01..2008-12-31 2009-01-01..2010-12-31     0.2701       1.1992     -0.2395               False      0.2238               0.0000            0.0000      0.2861      0.4901    0.2057  0.0644
+2005-01-01..2010-12-31 2011-01-01..2012-12-31     0.0522       0.3226     -0.3217               False      0.0000               0.0000            0.0000      0.0000      1.0000    0.0875 -0.0354
+2007-01-01..2012-12-31 2013-01-01..2014-12-31     0.2058       1.7397     -0.0735               False      0.0626               0.4102            0.3499      0.1553      0.0220    0.2252 -0.0195
+2009-01-01..2014-12-31 2015-01-01..2016-12-31     0.1056       0.5771     -0.3084               False      0.0000               0.1629            0.0000      0.0000      0.8371    0.0648  0.0408
+2011-01-01..2016-12-31 2017-01-01..2018-12-31     0.0163       0.0923     -0.2117               False      0.0193               0.1378            0.1347      0.1578      0.5504    0.0780 -0.0618
+2013-01-01..2018-12-31 2019-01-01..2020-12-31     0.0895       0.3958     -0.4179               False      0.0458               0.0000            0.2943      0.2066      0.4533    0.2456 -0.1560
+2015-01-01..2020-12-31 2021-01-01..2022-12-31    -0.0023       0.0945     -0.3121               False      0.0000               0.0000            0.1257      0.0000      0.8743    0.0264 -0.0287
+2017-01-01..2022-12-31 2023-01-01..2024-12-31     0.0033      -0.3731     -0.1264               False      0.0000               0.0000            0.3583      0.2172      0.4245    0.2564 -0.2532
+2019-01-01..2024-12-31 2025-01-01..2026-06-30     0.0781       0.2454     -0.2225               False      0.0313               0.0325            0.0000      0.0000      0.9362    0.1858 -0.1077
+
+  Stitched walk-forward performance:
+CAGR                         0.0435
+Ann. volatility              0.2315
+Sharpe                       0.2239
+Sortino                      0.3145
+Max drawdown                -0.7028
+Calmar                       0.0619
+Win rate (daily)             0.5274
+Win rate (monthly)           0.6032
+Skew                        -0.0338
+Excess kurtosis             14.8707
+VaR 95% (daily)             -0.0207
+CVaR 95% (daily)            -0.0355
+Best day                     0.1664
+Worst day                   -0.1219
+Drawdown length (days)     552.0000
+Recovery length (days)    2071.0000
+t-stat (Newey-West)          1.5394
+PSR (vs SR=0)                0.9174
+Years                       21.4484
+Excess CAGR vs bmk          -0.0648
+Information ratio           -0.4206
+Tracking error               0.1223
+Up capture                   0.9580
+Down capture                 1.0090
+
+======================================================================
+6. BOOTSTRAP CONFIDENCE INTERVAL AND DEFLATED SHARPE
+======================================================================
+  stationary block bootstrap (full-sample net returns):
+    sharpe           0.5426
+    boot_mean        0.5487
+    ci_2.5%          0.2073
+    ci_97.5%         0.9053
+    p_sharpe_le_0    0.0005
+    n_boot           2000
+
+  trials examined (parameter sweep): 27
+  expected max Sharpe from noise alone (SR*): 0.0533
+  actual full-sample Sharpe:                  0.4221
+  Deflated Sharpe Ratio (P[SR > SR*]):        0.9946
+
+saved -> C:\Users\raamd\OneDrive\projects\multifactor-equity\results\tables
