@@ -503,11 +503,61 @@ MASTHEAD = """
 """
 
 
+# REPORT.md is rendered twice: by this script, and by GitHub. GitHub runs KaTeX
+# behind a macro allowlist, so a macro can convert perfectly here and still be
+# refused there -- the reader gets "the following macros are not allowed" and the
+# equation drops to raw text. These are the ones that bite.
+BLOCKED_MACROS = {
+    r"\operatorname": r"use \text{...} instead",
+    r"\def": "macro definition, refused by GitHub",
+    r"\gdef": "macro definition, refused by GitHub",
+    r"\edef": "macro definition, refused by GitHub",
+    r"\let": "macro definition, refused by GitHub",
+    r"\newcommand": "macro definition, refused by GitHub",
+    r"\renewcommand": "macro definition, refused by GitHub",
+    r"\includegraphics": "refused by GitHub",
+    r"\require": "refused by GitHub",
+    r"\htmlClass": "refused by GitHub",
+    r"\htmlId": "refused by GitHub",
+    r"\htmlStyle": "refused by GitHub",
+    r"\htmlData": "refused by GitHub",
+}
+
+# Markdown strips a backslash that precedes punctuation before KaTeX ever sees the
+# expression, so these spellings leak bare punctuation into the rendered equation.
+PUNCT_SPACING_FIX = {
+    r"\,": r"\thinspace", r"\;": r"\thickspace",
+    r"\!": r"\negthinspace", r"\:": r"\medspace",
+}
+
+
+def check_math_macros(md: str) -> list[str]:
+    """Warn about math that renders here but breaks on GitHub. Returns warnings."""
+    body = re.sub(r"(?s)```.*?```", "", md)
+    spans = re.findall(r"(?s)\$\$.+?\$\$", body)
+    spans += re.findall(r"\$[^$\n]+?\$", re.sub(r"(?s)\$\$.+?\$\$", "", body))
+
+    warnings = []
+    for span in spans:
+        excerpt = " ".join(span.split())[:70]
+        for macro, why in BLOCKED_MACROS.items():
+            if re.search(re.escape(macro) + r"(?![a-zA-Z])", span):
+                warnings.append(f"{macro} ({why}) in: {excerpt}")
+        for bad, good in PUNCT_SPACING_FIX.items():
+            if bad in span:
+                warnings.append(f"{bad} loses its backslash in Markdown; "
+                                f"use {good} in: {excerpt}")
+    return warnings
+
+
 def main():
     # utf-8-sig: REPORT.md carries a BOM. Reading it as plain utf-8 leaves U+FEFF
     # at the head of the string, which defeats the \A anchor below (and stops
     # markdown recognising the first line as a heading).
     md = (ROOT / "REPORT.md").read_text(encoding="utf-8-sig")
+
+    for warning in check_math_macros(md):
+        print(f"  WARNING: {warning}", flush=True)
 
     # strip the h1 + standfirst; the masthead replaces them
     md = re.sub(r"\A#[^\n]*\n+\*\*[^\n]*\*\*\n+---\n", "", md)

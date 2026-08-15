@@ -280,7 +280,7 @@ $$\text{LOWVOL}_{i,t} = -\sqrt{252}\thickspace\thickspace \sigma\big(r_{i,u}\big
 
 **4 — Low beta**
 
-$$\text{LOWBETA}_{i,t} = -\frac{\operatorname{Cov}(r_i, r_m)}{\operatorname{Var}(r_m)} \bigg|_{(t-L,\thinspace t]}$$
+$$\text{LOWBETA}_{i,t} = -\frac{\text{Cov}(r_i, r_m)}{\text{Var}(r_m)} \bigg|_{(t-L,\thinspace t]}$$
 
 **5 — Short-term reversal**
 
@@ -346,7 +346,7 @@ a stationary block bootstrap (Politis-Romano) for Sharpe confidence intervals; a
 Probabilistic / Deflated Sharpe Ratio (Bailey & López de Prado 2014) to correct for
 multiple testing:
 
-$$\widehat{SR^*} = \sqrt{\operatorname{Var}(SR_{\text{trials}})}\left[(1-\gamma)\thinspace\Phi^{-1}\negthinspace\left(1 - \tfrac{1}{N}\right) + \gamma\thinspace\Phi^{-1}\negthinspace\left(1 - \tfrac{1}{Ne}\right)\right]$$
+$$\widehat{SR^*} = \sqrt{\text{Var}(SR_{\text{trials}})}\left[(1-\gamma)\thinspace\Phi^{-1}\negthinspace\left(1 - \tfrac{1}{N}\right) + \gamma\thinspace\Phi^{-1}\negthinspace\left(1 - \tfrac{1}{Ne}\right)\right]$$
 
 where $N$ is the number of configurations examined and $\gamma$ is the Euler-Mascheroni
 constant. Reporting a Sharpe ratio selected as the best of many trials without this
